@@ -1,0 +1,726 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.UserFragment"
+
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="7dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_gravity="center_vertical"
+
+            android:fontFamily="@font/sfpro"
+
+
+
+            android:text="Mon Compte"
+
+
+
+            android:textColor="@color/black_2"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_number"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            app:cardElevation="4dp"
+
+            app:cardCornerRadius="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/test"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/number_panier"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageButton
+            android:id="@+id/panier_vector"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+
+            android:background="@drawable/ic_commerce_and_shopping_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/titre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#6DFD8270" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_marginTop="?actionBarSize"
+        android:id="@+id/relativeLayout"
+        android:layout_marginBottom="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/greys">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#6DFD8270"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+
+
+                >
+
+
+
+
+
+                <TextView
+                    android:layout_margin="10dp"
+
+                    android:id="@+id/useremail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/sfpro"
+                    android:gravity="center_horizontal"
+                    android:text="Bonjour,\nChihab Eddine"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="viewStart"
+                    android:textSize="25sp"/>
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginTop="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/sfpro"
+
+                            android:textSize="14sp"
+                            android:text="MON COMPTE EMZIO"
+                            android:textColor="#5A5A5A" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#6DFD8270"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_marginBottom="10dp"
+
+                            android:orientation="vertical"
+                            android:shadowColor="#000000">
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/mes_commandes"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic_carton_box" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Mes Commandes"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/article_aime"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic__heart" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Article aimé"
+                                    android:textColor="@color/black"
+
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/rechercher_recement"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic_icons8_chercher_black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Rechercher récement"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+
+
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/sfpro"
+
+                            android:textSize="14sp"
+                            android:text="MES PARAMETRES"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#5A5A5A" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#6DFD8270"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_marginBottom="10dp"
+
+                            android:orientation="vertical"
+                            android:shadowColor="#000000">
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/details"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic_view_details" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Détails"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/carnet_adresse"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic_address" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Carnet d'Adresse"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:visibility="gone"
+                                    android:id="@+id/point_adresse"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_gravity="center"
+                                    android:layout_width="10dp"
+                                    app:cardCornerRadius="5dp"
+                                    android:layout_height="10dp">
+                                    <RelativeLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/test"
+                                        />
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/monpro"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingTop="5dp"
+
+
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/sfpro"
+
+                            android:textSize="14sp"
+                            android:text="MON COMPTE PROFESSIONNELE"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#5A5A5A" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#6DFD8270"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_marginBottom="10dp"
+
+                            android:orientation="vertical"
+                            android:shadowColor="#000000">
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/monboutique"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic_my_business" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Mon Boutique"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/my_stuff"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic_my_business" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Mes Produits"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/add_bouti"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+
+                                android:clipChildren="true"
+                                android:clipToPadding="true"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@drawable/ic_my_business" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/sfpro"
+
+                                    android:text="Créer une Boutique Officielle"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+
+
+                        android:id="@+id/logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+
+                        android:clipChildren="true"
+                        android:clipToPadding="true"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/ic_logout" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sfpro"
+
+                            android:text="Se Déconnecter"
+                            android:textColor="@color/black_2"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Créer Par\nChihabEddine ZITOUNI et Imed TOUIL"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sfpro"
+                    android:textColor="#BCBCBC"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="?actionBarSize">
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintRight_toRightOf="@+id/relativeLayout"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:background="@color/test"
+            android:clickable="true"
+            android:src="@drawable/ic_iconfinder_add_126583"
+            app:backgroundTint="@color/test"
+
+            app:tint="@color/white" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAdd">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorPri1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:textColor="@color/black"
+
+                    android:padding="2dp"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Nom de Produit"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+                            />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_product_nom"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/sfpro"
+                        android:layout_marginBottom="5dp"
+                        android:inputType="text"
+
+
+                        android:hint="Ecrire..."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:padding="2dp"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Prix de Produit"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_product_prix"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                            android:fontFamily="@font/sfpro"
+                        android:layout_marginBottom="5dp"
+                        android:inputType="numberDecimal"
+
+
+                        android:hint="Ecrire..."
+                        />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="DA"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="@font/sfpro"
+                                android:textColor="@color/black_2"
+                                android:textStyle="italic"
+                                android:layout_height="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+
+            android:padding="2dp"
+
+            android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:text="Type de Produit"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black_2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sfpro"
+                    android:layout_height="match_parent" />
+
+                <Spinner
+                    android:spinnerMode="dialog"
+                    android:prompt="@string/a"
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/add_product_spinner_type_de_produit"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="15dp"
+
+                    android:fontFamily="@font/sfpro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.345">
+
+                </Spinner>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:padding="2dp"
+
+                    android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:text="Marque du Produit"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black_2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sfpro"
+                    android:layout_height="match_parent"/>
+
+                <Spinner
+                    android:spinnerMode="dialog"
+                    android:prompt="@string/b"
+                    android:layout_width="match_parent"
+                    android:id="@+id/add_product_spinner_marque_de_produit"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sfpro"
+                    android:layout_height="match_parent"
+
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.345">
+
+
+
+
+                </Spinner>
+
+
+            </LinearLayout></androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:padding="2dp"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Description"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent" />
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/add_product_description"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginTop="15dp"
+                            android:gravity="top"
+                            android:layout_marginBottom="5dp"
+
+
+                            android:hint="Ecrire..."/>
+
+                        <TextView
+                            android:layout_marginBottom="10dp"
+                        android:id="@+id/decs_test"
+                            android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/sarala"
+                        android:text="Descritpion INVALIDE"
+                        android:textColor="#CAFF0000"
+
+
+                        />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:textColor="@color/black"
+
+                    android:padding="2dp"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Quantité du Produit"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+                            />
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/add_product_qt"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="numberDecimal"
+
+
+                            android:hint="Ecrire..."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+               <HorizontalScrollView
+                   android:scrollbars="none"
+                   android:layout_marginTop="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_height="wrap_content">
+
+
+                      <LinearLayout
+                          android:layout_margin="5dp"
+                          android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+
+                          <androidx.cardview.widget.CardView
+                              android:layout_margin="3dp"
+                              android:layout_gravity="center"
+                              app:cardElevation="5dp"
+                              app:cardCornerRadius="5dp"
+                              android:layout_width="120dp"
+                              android:layout_height="120dp">
+                              <RelativeLayout
+                                  android:background="@color/white"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent">
+                              <ImageView
+                                  android:id="@+id/image1"
+
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+
+                                  />
+                              </RelativeLayout>
+                          </androidx.cardview.widget.CardView>
+
+                          <Button
+                              android:id="@+id/ajouter1"
+                              android:layout_marginTop="5dp"
+                              android:layout_width="80dp"
+                              android:layout_height="40dp"
+                              android:layout_gravity="center"
+                              android:backgroundTint="@color/test"
+                              android:text="Ajouter"
+                              android:textSize="9sp"
+                              />
+
+                          <Button
+                              android:id="@+id/supprimer1"
+                              android:layout_marginTop="5dp"
+                              android:layout_width="90dp"
+                              android:layout_height="40dp"
+                              android:layout_gravity="center"
+                              android:backgroundTint="@color/test"
+                              android:text="Supprimer"
+                              android:textSize="9sp"
+
+                              />
+
+                      </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_margin="5dp"
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <androidx.cardview.widget.CardView
+                               android:layout_margin="3dp"
+                               android:layout_gravity="center"
+                               app:cardElevation="5dp"
+                               app:cardCornerRadius="5dp"
+                               android:layout_width="120dp"
+                               android:layout_height="120dp">
+                               <RelativeLayout
+                                   android:background="@color/white"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+                               <ImageView
+                                   android:id="@+id/image2"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+
+                                   />
+                               </RelativeLayout>
+                           </androidx.cardview.widget.CardView>
+
+                           <Button
+                               android:id="@+id/ajouter2"
+                               android:layout_marginTop="5dp"
+                               android:layout_width="80dp"
+                               android:layout_height="40dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/test"
+                               android:text="Ajouter"
+                               android:textSize="9sp"
+                               />
+
+                           <Button
+                               android:id="@+id/supprimer2"
+                               android:layout_marginTop="5dp"
+                               android:layout_width="90dp"
+                               android:layout_height="40dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/test"
+                               android:text="Supprimer"
+                               android:textSize="9sp"
+                               />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_margin="5dp"
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <androidx.cardview.widget.CardView
+                               android:layout_margin="3dp"
+                               android:layout_gravity="center"
+                               app:cardElevation="5dp"
+                               app:cardCornerRadius="5dp"
+                               android:layout_width="120dp"
+                               android:layout_height="120dp">
+                               <RelativeLayout
+                                   android:background="@color/white"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+                               <ImageView
+                                   android:id="@+id/image3"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+
+                                   />
+                               </RelativeLayout>
+                           </androidx.cardview.widget.CardView>
+
+                           <Button
+                               android:id="@+id/ajouter3"
+                               android:layout_marginTop="5dp"
+                               android:layout_width="80dp"
+                               android:layout_height="40dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/test"
+                               android:text="Ajouter"
+                               android:textSize="9sp"
+                               />
+
+                           <Button
+                               android:id="@+id/supprimer3"
+                               android:layout_marginTop="5dp"
+                               android:layout_width="90dp"
+                               android:layout_height="40dp"
+                               android:textSize="9sp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/test"
+                               android:text="Supprimer"
+                               />
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_margin="5dp"
+                           android:layout_width="wrap_content"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <androidx.cardview.widget.CardView
+                               android:layout_margin="3dp"
+                               android:layout_gravity="center"
+                               app:cardElevation="5dp"
+                               app:cardCornerRadius="5dp"
+                               android:layout_width="120dp"
+                               android:layout_height="120dp">
+                               <RelativeLayout
+                                   android:background="@color/white"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent">
+                                   <ImageView
+                                       android:id="@+id/image4"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+
+                                       />
+                               </RelativeLayout>
+
+                           </androidx.cardview.widget.CardView>
+
+                           <Button
+                               android:id="@+id/ajouter4"
+                               android:layout_marginTop="5dp"
+                               android:layout_width="80dp"
+                               android:layout_height="40dp"
+                               android:textSize="9sp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/test"
+                               android:text="Ajouter"
+                               />
+
+                           <Button
+                               android:id="@+id/supprimer4"
+                               android:layout_marginTop="5dp"
+                               android:layout_width="90dp"
+                               android:layout_height="40dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/test"
+                               android:text="Supprimer"
+                               android:textSize="9sp"
+                               />
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+               </HorizontalScrollView>
+
+
+
+
+
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/add_product_valider"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/sfpro"
+
+                    android:text="Ajouter le Produit"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="30dp"
+                    app:backgroundTint="@color/test">
+
+                </Button>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sfpro"
+                    android:textSize="15sp"
+                    android:textColor="@color/black_2"
+                    android:text="EMZIO ©"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="7dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_gravity="center_vertical"
+            android:id="@+id/titre"
+            android:fontFamily="@font/sfpro"
+
+            android:text="Ajouter un Nouveau Produit"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/black_2"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#6DFD8270" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_evaluation">
+
+
+
+    <fragment
+        android:id="@+id/navigation_evaluation"
+        android:name="com.example.emzio.ui.evaluation.EvaluationFragment"
+        android:label="@string/title_eva"
+
+        tools:layout="@layout/eva_acti" />
+
+    <fragment
+        android:id="@+id/navigation_comment"
+        android:name="com.example.emzio.ui.commentaire.CommentaireFragment"
+        android:label="@string/title_comment"
+        tools:layout="@layout/comment_acti" />
+
+
+
+</navigation>

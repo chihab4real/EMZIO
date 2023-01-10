@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?actionBarSize"
+    tools:context=".ui.search.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/floating_bar"
+
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="7dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:layout_gravity="center_vertical"
+
+                android:fontFamily="@font/sfpro"
+
+                android:text="@string/app_name"
+
+
+
+                android:textColor="@color/black_2"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_number"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:elevation="4dp"
+                android:backgroundTint="@color/test"
+                app:cardCornerRadius="10dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <TextView
+                    android:id="@+id/number_panier"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageButton
+                android:id="@+id/panier_vector"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+
+                android:background="@drawable/ic_commerce_and_shopping_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/titre"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#6DFD8270" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+
+            android:background="@color/colorPri1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorPri1"
+
+                    android:layout_marginBottom="25dp"
+                    tools:layout_editor_absoluteY="56dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+
+                        app:cardElevation="2dp"
+                        app:cardCornerRadius="0dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="3dp"
+
+                            android:background="#F3F3F3"
+
+
+                            android:layout_height="wrap_content">
+
+
+                            <EditText
+
+                                android:inputType="text"
+                                android:layout_weight="0.5"
+                                android:id="@+id/searchedit"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+
+                                android:layout_marginBottom="1dp"
+                                android:textColor="@color/black_2"
+                                android:textSize="16sp"
+                                android:background="@color/white"
+                                android:imeOptions="actionSearch"
+                                android:hint="Chercher un Produit"
+
+                                />
+
+                            <RelativeLayout
+
+                                android:layout_width="wrap_content"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_marginBottom="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+
+                                    android:padding="5dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:paddingRight="5dp"
+                                    android:layout_gravity="center"
+
+                                    android:src="@drawable/ic_icons8_chercher_black"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <RelativeLayout
+                            android:background="@color/white"
+                             android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                        <ListView
+
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:id="@+id/search_liste"
+                            android:layout_margin="10dp"
+                            android:layout_height="200dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:visibility="gone"
+                        android:id="@+id/rec_card"
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:text="Produits Recommandés ! "
+                                android:layout_margin="10dp"
+
+                                android:textColor="@color/black_2"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/sfpro"
+                                android:layout_height="match_parent"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="#6DFD8270"
+
+                                />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <GridView
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/liste_reco"
+
+                                    android:horizontalSpacing="2dp"
+                                    android:numColumns="2"
+                                    android:scrollbars="none"
+                                    android:verticalSpacing="2dp"
+                                    android:layout_margin="3dp"
+
+                                    android:layout_height="200dp"/>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:elevation="7dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:background="@drawable/shadow10"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/see_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/sfpro"
+                android:text="See All"
+                android:textAlignment="center"
+                android:textColor="@color/black_2"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </RelativeLayout>
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

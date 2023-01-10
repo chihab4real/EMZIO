@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.MainDetails">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="7dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:id="@+id/titre"
+            android:fontFamily="@font/sfpro"
+
+            android:text="Mon Compte"
+            android:layout_marginLeft="20dp"
+
+
+            android:textAlignment="viewStart"
+
+            android:textColor="@color/black_2"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#6DFD8270" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPri"
+        android:layout_marginTop="?actionBarSize"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="7dp"
+                    android:outlineAmbientShadowColor="#000000"
+                    android:textColor="@color/black"
+
+                    android:padding="2dp"
+                    android:background="@drawable/shadow12"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Données Personnelles"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+
+                            android:layout_marginTop="5dp"
+                            android:background="#6DFD8270"
+
+                            />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_user_avatar_profile" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sfpro"
+
+                            android:textColor="@color/black_2"
+                            android:layout_height="wrap_content"
+                            android:text="Prénom"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/details_prenom"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black_2"
+                            android:layout_height="wrap_content"
+                            android:text="Nom"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/details_nom"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_communications" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black_2"
+                            android:layout_height="wrap_content"
+                            android:text="E-Mail"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/details_mail"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_symbols" />
+
+                        <RadioGroup
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+
+
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/details_homme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sfpro"
+                                android:textColor="@color/black_2"
+                                android:layout_marginRight="100dp"
+
+
+                                android:text="Homme" />
+
+                            <RadioButton
+                                android:id="@+id/details_femme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black_2"
+                                android:fontFamily="@font/sfpro"
+                                android:text="Femme" />
+                        </RadioGroup>
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_interface" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Téléphone"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/details_phone"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center"
+
+                            android:id="@+id/details_valider"
+                            android:layout_marginBottom="40dp"
+                            android:textStyle="bold"
+                            android:text="Valider et Modifier"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sfpro"
+                            app:backgroundTint="@color/test"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="7dp"
+                    android:outlineAmbientShadowColor="#000000"
+                    android:textColor="@color/black"
+
+                    android:padding="2dp"
+                    android:background="@drawable/shadow12"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Mot de Passe"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+
+                            android:layout_marginTop="5dp"
+                            android:background="#6DFD8270"
+
+                            />
+
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_reset_password" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Ancien Mot de Passe"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/details_password_first"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Nouveau Mot de Passe"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/details_password_second"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginTop="15dp"
+
+                            android:id="@+id/details_password_valider"
+                            android:layout_marginBottom="40dp"
+                            android:fontFamily="@font/sfpro"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:text="Modifier le Mot de Pass"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/test"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="EMZIO ©"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/black_2"
+                    android:fontFamily="@font/sfpro"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.MainAdresse">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="7dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:elevation="2dp"
+            android:shadowColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical"
+            android:id="@+id/titre"
+            android:fontFamily="@font/sfpro"
+
+
+            android:text="Mon Compte"
+
+            android:textAlignment="viewStart"
+
+            android:textColor="@color/black_2"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#6DFD8270" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPriDark"
+        android:layout_marginTop="?actionBarSize"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="7dp"
+                    android:outlineAmbientShadowColor="#000000"
+                    android:textColor="@color/black"
+
+                    android:padding="2dp"
+                    android:background="@drawable/shadow12"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Mes Adresses"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+
+                            android:layout_marginTop="5dp"
+                            android:background="#6DFD8270"
+
+                            />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_address" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Adresse"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/adresse_adresse"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Inforamtions Supplémentaire"
+
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/adresse_info_sup"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Wilaya"
+                            />
+
+                        <Spinner
+                            android:spinnerMode="dialog"
+                            android:prompt="@string/wilaya"
+                            android:layout_width="match_parent"
+                            android:id="@+id/adresse_spinner"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+
+                        >
+
+
+
+
+                        </Spinner>
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/sfpro"
+
+                            android:layout_marginTop="15dp"
+
+                            android:id="@+id/adresse_valider"
+                            android:layout_marginBottom="40dp"
+                            android:text="Modifier l'Adresse"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/test"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="EMZIO ©"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/sarala"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

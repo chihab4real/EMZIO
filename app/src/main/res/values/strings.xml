@@ -1,0 +1,289 @@
+<resources>
+    <string name="app_name">Emzio</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_recomnded">Pour Vous</string>
+    <string name="title_user">Mon Compte</string>
+    <string name="title_rechrce">Rechercher</string>
+    <string name="title_eva">Evaluation</string>
+    <string name="title_comment">Commentaires</string>
+    <string name="title_product">Produit</string>
+    <string name="a">Type de Produit</string>
+    <string name="b">La Marque du Produit</string>
+    <string name="c">Type de Compte</string>
+    <string name="d">Nos Boutiques</string>
+    <string name="wilaya">Wialya</string>
+    <string name="filtrer_la_marque">Filtrer La Marque</string>
+    <string name="t">Trier Par</string>
+    <string name="m">Marque</string>
+
+    <string-array name="users">
+        <item>NORMAL</item>
+        <item>PRO</item>
+    </string-array>
+
+
+    <string-array name="type_produits"
+
+        >
+
+        <item>Composants PC</item>
+        <item>Accessoires ordinateurs</item>
+        <item>Ordinateurs</item>
+        <item>Ordinateur Portables</item>
+        <item>Tablettes</item>
+        <item>Imprimantes et scanners</item>
+        <item>Téléphones</item>
+        <item>Consoles des jeux</item>
+        <item>Appareils photo</item>
+        <item>Sons</item>
+
+
+    </string-array>
+
+
+    <string-array name="composants_pc">
+
+        <item>A4tech</item>
+        <item>Aorus</item>
+        <item>Apc</item>
+        <item>Asus</item>
+        <item>Adata</item>
+        <item>Bloody</item>
+        <item>Canon</item>
+        <item>Capsys</item>
+        <item>Con</item>
+        <item>Coolermaster</item>
+        <item>Cooler Master Ltd</item>
+        <item>DELL</item>
+        <item>D-Link</item>
+        <item>E BLUE</item>
+        <item>Enigma</item>
+        <item>Generic</item>
+        <item>Gigabyte</item>
+        <item>Hama</item>
+        <item>Hi Speed</item>
+        <item>Jeway</item>
+        <item>Kingston</item>
+        <item>Lenovo</item>
+        <item>Logitech</item>
+        <item>Mac Tech</item>
+        <item>Macy</item>
+        <item>Marvo</item>
+        <item>MaxiPower</item>
+        <item>Meetion</item>
+        <item>Microsoft</item>
+        <item>Msi</item>
+        <item>Novatac</item>
+        <item>PC MAX</item>
+        <item>Pny Technologies</item>
+        <item>Rapoo</item>
+        <item>Razer</item>
+        <item>Scorpion</item>
+        <item>Sony</item>
+        <item>Spirit Of Gamer</item>
+        <item>TPLink</item>
+        <item>Toshiba</item>
+        <item>Western Digital</item>
+        <item>ZELOTES</item>
+
+    </string-array>
+    <string-array name="accessoires_ordinateurs">
+        <item>Sans Marque</item>
+        <item>Adata</item>
+        <item>Awei</item>
+        <item>Capsys</item>
+        <item>Double M</item>
+        <item>Earldom</item>
+        <item>Empty</item>
+        <item>Enigma</item>
+        <item>Ette</item>
+        <item>Generic</item>
+        <item>Gp</item>
+        <item>Jabra</item>
+        <item>Jeway</item>
+        <item>Ldnio</item>
+        <item>Lenovo</item>
+        <item>Lexar</item>
+        <item>Nubwo</item>
+        <item>Rivacase</item>
+        <item>Targus</item>
+        <item>Toshiba</item>
+        <item>Uniross</item>
+        <item>Mac Tech</item>
+
+
+    </string-array>
+    <string-array name="ordinateurs">
+        <item>Sans Marque</item>
+
+        <item>Acer</item>
+        <item>Apple</item>
+        <item>Asus</item>
+        <item>Condor</item>
+        <item>DELL</item>
+        <item>Enigma</item>
+        <item>Hp</item>
+        <item>Lenovo</item>
+        <item>Microsoft</item>
+        <item>Samsung</item>
+        <item>Msi</item>
+
+
+    </string-array>
+
+    <string-array name="ordianteurs_protables">
+        <item>Sans Marque</item>
+
+        <item>Acer</item>
+        <item>Apple</item>
+        <item>Asus</item>
+        <item>Condor</item>
+        <item>DELL</item>
+        <item>Enigma</item>
+        <item>Hp</item>
+        <item>Lenovo</item>
+        <item>Microsoft</item>
+        <item>Samsung</item>
+
+    </string-array>
+
+
+    <string-array name="tablettes">
+        <item>Sans Marque</item>
+        <item>Apple</item>
+        <item>Asus</item>
+        <item>Acer</item>
+        <item>Condor</item>
+        <item>DELL</item>
+        <item>Enigma</item>
+        <item>Hp</item>
+        <item>Lenovo</item>
+        <item>Microsoft</item>
+        <item>Samsung</item>
+        <item>Msi</item>
+
+
+    </string-array>
+    <string-array name="imprimante_scaner">
+
+        <item>Sans Marque</item>
+        <item>Brother</item>
+        <item>Canon</item>
+        <item>Epson</item>
+        <item>Generic</item>
+        <item>Hp</item>
+        <item>Kyocera Ecosys Laser</item>
+
+        <item>Sharp</item>
+        <item>Sunlux</item>
+        <item>XOinter</item>
+
+
+    </string-array>
+
+    <string-array name="telephones">
+        <item>Sans Marque</item>
+        <item>Apple</item>
+        <item>Brandt</item>
+        <item>Condor</item>
+        <item>Doro</item>
+        <item>Huawei</item>
+        <item>IRIS</item>
+        <item>Infinix</item>
+        <item>LG</item>
+        <item>OPPO</item>
+        <item>OnePlus</item>
+        <item>Samsung</item>
+        <item>XIAOMI</item>
+
+
+    </string-array>
+    <string-array name="games">
+        <item>Sans Marque</item>
+        <item>Microsoft-XBOX</item>
+        <item>Sony-Playsattion</item>
+        <item>Nintendo</item>
+
+
+    </string-array>
+
+    <string-array name="appareils_photo">
+        <item>Sans Marque</item>
+        <item>Canon</item>
+        <item>Nikon</item>
+        <item>Samsung</item>
+        <item>Fujifilm</item>
+        <item>Olympus</item>
+        <item>Panasonic</item>
+        <item>Sony</item>
+    </string-array>
+
+    <string-array name="sons">
+        <item>Sans Marque</item>
+        <item>Beats Audio</item>
+        <item>JBL</item>
+        <item>SONY</item>
+
+
+    </string-array>
+
+    <string-array name="wilayas">
+        <item>Aucune</item>
+        <item>Alger</item>
+        <item>Annaba</item>
+        <item>Ain Defla</item>
+        <item>Ain Temouchent</item>
+        <item>Batna</item>
+        <item>Biskra</item>
+        <item>Blida</item>
+        <item>Bordj Bou Arreirdj</item>
+        <item>Bouira</item>
+        <item>Boumderdes</item>
+
+
+        <item>Bejaia</item>
+        <item>Constantine</item>
+        <item>El Oued</item>
+        <item>El Taref</item>
+        <item>Guelma</item>
+        <item>Jijel</item>
+        <item>Khenchla</item>
+        <item>MSila</item>
+        <item>Mascara</item>
+        <item>Mila</item>
+
+
+        <item>Mostaganem</item>
+        <item>Médéa</item>
+        <item>Oran</item>
+        <item>Relizane</item>
+        <item>Saida</item>
+        <item>Sidi BelAbbes</item>
+        <item>Skikda</item>
+        <item>Souk-Ahras</item>
+        <item>Setif</item>
+        <item>Tiaret</item>
+
+
+        <item>Tipaza</item>
+        <item>Tissemsilt</item>
+        <item>Tizi Ouzou</item>
+        <item>Tlemcen</item>
+        <item>Tebesa</item>
+
+
+    </string-array>
+
+    <string-array name="trier">
+        <item>Par Défaut</item>
+        <item>Par Prix (Croissant)</item>
+        <item>Par Prix (Décroissant)</item>
+    </string-array>
+    <string name="title_activity_main_forume">MainActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+</resources>
+

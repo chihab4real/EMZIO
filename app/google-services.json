@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "196442824609",
+    "firebase_url": "https://emzio-56d26.firebaseio.com",
+    "project_id": "emzio-56d26",
+    "storage_bucket": "emzio-56d26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196442824609:android:99ea061c817cfe328f35e0",
+        "android_client_info": {
+          "package_name": "com.example.emzio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196442824609-01ngdp5ug8g5pjeqr9vmgo2o9sq0lfkj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emzio",
+            "certificate_hash": "8b76a4e8e608d7ecac5b70eac055442390b575a9"
+          }
+        },
+        {
+          "client_id": "196442824609-4fm2lpfsuloq04fu9o0m70ljnpe78mn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkHZB3YAm3hVblab70u5OjyVSTawSGggU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196442824609-4fm2lpfsuloq04fu9o0m70ljnpe78mn7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

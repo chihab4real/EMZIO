@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.commentaire.CommentaireFragment">
+
+    <RelativeLayout
+        android:background="@color/greys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:elevation="7dp"
+            android:outlineAmbientShadowColor="#000000"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+
+                android:fontFamily="@font/sfpro"
+                android:layout_marginRight="20dp"
+
+                android:text="Emzio"
+                android:layout_marginLeft="20dp"
+
+                android:textAlignment="viewStart"
+
+                android:textColor="@color/black_2"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#6DFD8270" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="?actionBarSize"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <androidx.cardview.widget.CardView
+                                app:cardElevation="3dp"
+                                app:cardCornerRadius="10dp"
+
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content">
+                                <ImageView
+
+                                    android:layout_width="180dp"
+                                    android:layout_height="180dp"
+                                    android:id="@+id/eva_img"
+
+                                    />
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <RelativeLayout
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ProgressBar
+
+                                            android:id="@+id/progress_note"
+                                            style="?android:progressBarStyleHorizontal"
+                                            android:layout_width="200dp"
+                                            android:layout_height="200dp"
+                                            android:layout_gravity="center"
+                                            android:progress="80"
+
+                                            android:progressDrawable="@drawable/progress_circle"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/textViewNote"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/sfpro"
+                                            android:text="4/5"
+                                            android:textColor="@color/test"
+                                            android:textSize="35sp"
+                                            android:textStyle="bold"
+
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/title_eva"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Galaxy S20"
+
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+
+                            android:id="@+id/totale_eva"
+                            android:textAlignment="center"
+                            android:layout_margin="0dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="100 évaluations"
+
+                            android:fontFamily="@font/sfpro"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_eva"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Evaluer ce produit"
+                                android:fontFamily="@font/sfpro"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                />
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="#6DFD8270"
+                                />
+
+                            <RatingBar
+                                android:id="@+id/usernote_eva"
+                                android:backgroundTint="@color/black_2"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:text="Donnez votre avis"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black_2"
+                                    android:textSize="16sp"
+                                    android:fontFamily="@font/sfpro"
+                                    android:layout_height="match_parent" />
+
+
+                                <EditText
+
+                                    android:id="@+id/commentaire_eva"
+                                    android:background="@android:color/transparent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sfpro"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="top"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="17sp"
+
+                                    android:hint="Votre avis..."/>
+
+
+                            </LinearLayout>
+
+
+                            <Button
+                                android:id="@+id/send_eva"
+                                android:layout_gravity="end"
+
+                                android:layout_width="80dp"
+
+                                android:layout_height="40dp"
+
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp"
+
+                                android:fontFamily="@font/sfpro"
+
+                                android:text="Envoyer"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="10sp"
+                               android:layout_marginBottom="5dp"
+                                app:backgroundTint="@color/test"/>
+
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tous les évaluations "
+                    android:fontFamily="@font/sfpro"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ListView
+
+
+                    
+
+                    android:id="@+id/list_eva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    />
+
+
+<!--
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <RelativeLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user_photo"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chihab Eddine"
+
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="15sp"
+                                        />
+
+                                    <RatingBar
+
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:layout_height="wrap_content"
+
+                                        />
+
+                                    <TextView
+
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ce produit est magnifique ce produit est magnifiquece produit est magnifique."
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <RelativeLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user_photo"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chihab Eddine"
+
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="15sp"
+                                        />
+
+                                    <RatingBar
+
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:layout_height="wrap_content"
+
+                                        />
+
+                                    <TextView
+
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ce produit est magnifique ce produit est magnifiquece produit est magnifique."
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <RelativeLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user_photo"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chihab Eddine"
+
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="15sp"
+                                        />
+
+                                    <RatingBar
+
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:layout_height="wrap_content"
+
+                                        />
+
+                                    <TextView
+
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ce produit est magnifique ce produit est magnifiquece produit est magnifique."
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <RelativeLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user_photo"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chihab Eddine"
+
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="15sp"
+                                        />
+
+                                    <RatingBar
+
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:layout_height="wrap_content"
+
+                                        />
+
+                                    <TextView
+
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ce produit est magnifique ce produit est magnifiquece produit est magnifique."
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <RelativeLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user_photo"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chihab Eddine"
+
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="15sp"
+                                        />
+
+                                    <RatingBar
+
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:layout_height="wrap_content"
+
+                                        />
+
+                                    <TextView
+
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ce produit est magnifique ce produit est magnifiquece produit est magnifique."
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <RelativeLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user_photo"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chihab Eddine"
+
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="15sp"
+                                        />
+
+                                    <RatingBar
+
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:layout_height="wrap_content"
+
+                                        />
+
+                                    <TextView
+
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ce produit est magnifique ce produit est magnifiquece produit est magnifique."
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+
+                    >
+
+                    <RelativeLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/user_photo"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chihab Eddine"
+
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black_2"
+                                        android:textSize="15sp"
+                                        />
+
+                                    <RatingBar
+
+                                        style="?android:attr/ratingBarStyleSmall"
+                                        android:layout_width="wrap_content"
+                                        android:numStars="5"
+                                        android:rating="5"
+                                        android:isIndicator="true"
+                                        android:layout_height="wrap_content"
+
+                                        />
+
+                                    <TextView
+
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="ce produit est magnifique ce produit est magnifiquece produit est magnifique."
+                                        android:fontFamily="@font/sfpro"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                -->
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

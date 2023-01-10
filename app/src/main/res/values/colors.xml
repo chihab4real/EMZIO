@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#C977443D</color>
+    <color name="colorPrimaryDark">#C977443D</color>
+    <color name="colorAccent">#C977443D</color>
+
+    <color name="colorPri">#F6F6F6</color>
+    <color name="colorPri1">#FBFBFB</color>
+    <color name="colorPriDark">#ECECEC</color>
+    <color name="colorAcc">#D5D5D5</color>
+
+    <color name="swipe_1">#2D3D52</color>
+    <color name="swipe_2">#232F3E</color>
+    <color name="swipe_3">#394D66</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="test">#fd8270</color>
+    <color name="test2">#C36354</color>
+    <color name="test3">#d8b116</color>
+
+
+    <color name="colorPrimary1">#2F4F4F</color>
+    <color name="colorPrimaryDark1">#008197</color>
+    <color name="colorAccent1">#f0e0af</color>
+
+
+    <color name="black_2">#474747</color>
+
+    <color name="greys"> #FAFAFA</color>
+</resources>
+
+<!--
+
+
+      <color name="colorPrimary1">#D55947</color>
+    <color name="colorPrimaryDark1">#D55947</color>
+    <color name="colorAccent1">#D55947</color>
+     <color name="black_2">#2E2E2E</color>
+
+     <color name="colorPrimary1">#474747</color>
+    <color name="colorPrimaryDark1">#474747</color>
+    <color name="colorAccent1">#505050</color>
+
+-->

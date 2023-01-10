@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modification d'un Produit"
+                android:layout_margin="7dp"
+                android:fontFamily="@font/sfpro"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textAlignment="center"
+
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6DFD8270"
+                />
+
+            <LinearLayout
+                android:id="@+id/opendlin1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Voulez vous  le :   "
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textColor="@color/black_2"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+
+                <LinearLayout
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <Button
+                        android:id="@+id/supp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Supprimee"
+                        android:textSize="9sp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/test"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <Button
+                        android:id="@+id/modd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Modifier"
+                        android:textSize="9sp"
+                        android:backgroundTint="@color/test"
+                        android:textColor="@color/white"
+
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/opendlin2"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Voulez vous vraiment supprimer ce Produit ?"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textColor="@color/black_2"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+
+
+                    />
+
+                <LinearLayout
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <Button
+                        android:id="@+id/non_supp"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:text="NON"
+                        android:textSize="9sp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/test"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <Button
+                        android:id="@+id/oui_supp"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:text="oui"
+                        android:textSize="9sp"
+                        android:backgroundTint="@color/test"
+                        android:textColor="@color/white"
+
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/liste_id_commande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sfpro"
+            android:layout_marginBottom="5dp"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/liste_date_commande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Date"
+            android:fontFamily="@font/sfpro"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/liste_price_commande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sfpro"
+        android:layout_marginEnd="16dp"
+        android:text="PRICE"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

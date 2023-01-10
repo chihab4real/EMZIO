@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:elevation="7dp"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/test"
+
+       >
+
+
+        <TextView
+
+            android:id="@+id/titre"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+
+            android:fontFamily="@font/sfpro"
+
+            android:text="@string/app_name"
+
+
+
+
+            android:textAlignment="viewStart"
+
+            android:textColor="@color/black_2"
+
+            android:textSize="20sp"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/card_number"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:elevation="4dp"
+            android:backgroundTint="@color/test"
+            app:cardCornerRadius="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <TextView
+                android:id="@+id/number_panier"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageButton
+            android:id="@+id/panier_vector"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+
+            android:background="@drawable/ic_commerce_and_shopping_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/titre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+
+        android:layout_marginBottom="?actionBarSize"
+        android:background="@color/white"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#6DFD8270" />
+
+        </LinearLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <ScrollView
+                android:scrollbars="none"
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/pub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Publicités"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/sfpro"
+                    android:textColor="@color/test"
+                    android:textStyle="bold"
+
+                    />
+
+
+
+                <RelativeLayout
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    >
+
+                    <com.smarteist.autoimageslider.SliderView
+
+                        android:background="@color/white"
+                        android:id="@+id/imageSlider"
+                        android:focusedByDefault="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="@color/test"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="1" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Nos Categories"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="7dp"
+                        android:fontFamily="@font/sfpro"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#6DFD8270"/>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <GridView
+
+                        android:id="@+id/categories"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:layout_height="560dp"
+
+
+                        android:layout_marginTop="8dp"
+
+
+                        android:numColumns="2"
+
+                        android:scrollbars="none" />
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/principal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#6DFD8270" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

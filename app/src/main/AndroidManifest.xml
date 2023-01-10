@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emzio">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainMyProductDetails" />
+        <activity android:name=".MainModifierProduit" />
+        <activity android:name=".MainPasswordForget" />
+        <activity android:name=".MainWelcomeSign" />
+        <activity android:name=".MainValidation" />
+        <activity android:name=".ui.user.MainMonBoutique" />
+        <activity android:name=".ui.user.MainAddBoutique" />
+        <activity android:name=".ui.user.MainMesProduits" />
+        <activity android:name=".ui.user.MainRechrcheRec" />
+        <activity android:name=".MainCategorie" />
+        <activity android:name=".MainAfterSearch" />
+        <activity android:name=".ui.user.MainLikes" />
+        <activity android:name=".MainProduitCommande" />
+        <activity android:name=".ui.user.MainMesCommandes" />
+        <activity android:name=".ui.user.MainAdresse" />
+        <activity android:name=".ui.user.MainDetails" />
+        <activity android:name=".Welcome" />
+        <activity android:name=".MainPanier" />
+        <activity android:name=".MainProduit" />
+        <activity android:name=".MainAdd" />
+        <activity android:name=".VideTest" />
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/title_activity_main_menu" />
+        <activity android:name=".Loadsc" />
+        <activity android:name=".newMessage" />
+        <activity android:name=".MainVerfyInternet" />
+        <activity android:name=".MainSign" />
+        <activity android:name=".MainLogin" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

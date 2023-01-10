@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.MainAddBoutique">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorPri1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:textColor="@color/black"
+
+                    android:padding="2dp"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Nom de Boutique"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+                            />
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nombt"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+
+                    android:padding="2dp"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:text="Adresse de Boutique"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_2"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Adresse"
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/adresse_adresse"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Infos complémentaires"
+
+                            />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/adresse_info_sup"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="text"
+
+
+                            android:hint="Ecrire..."/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_2"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="wrap_content"
+                            android:text="Wilaya"
+                            />
+
+                        <Spinner
+                            android:spinnerMode="dialog"
+                            android:prompt="@string/wilaya"
+                            android:layout_width="match_parent"
+                            android:id="@+id/adresse_spinner"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/sfpro"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginBottom="20dp"
+
+                            >
+
+
+
+
+                        </Spinner>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/boutique_valider"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/sfpro"
+
+                    android:text="Valider et Envoyer le demande"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="30dp"
+                    app:backgroundTint="@color/test">
+
+                </Button>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sfpro"
+                    android:textSize="15sp"
+                    android:textColor="@color/black_2"
+                    android:text="EMZIO ©"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="7dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_gravity="center_vertical"
+            android:id="@+id/titre"
+            android:fontFamily="@font/sf"
+
+            android:text="Créer et Valider un Boutique"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/black_2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#6DFD8270" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
