@@ -5,6 +5,7 @@ public class Adresse {
     private String wilaya;
     private String infoSupp;
     private  int num_wilaya;
+    //test
 
     public Adresse(){
 
