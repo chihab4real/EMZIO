@@ -7,6 +7,10 @@ The best known recommendation algorithms are those used for e-commerce such as A
 This project aimed to implement a mobile e-commerce application in Java Android. This application allows us to collect some information about users and recommend items to them based on a simple content-based recommendation algorithm which uses the user's product consultation history. 
 This application was subsequently tested on several phones and with several users in order to facilitate its deployment in the future.
 
+## contributors
+- [Imed Touil ](https://www.linkedin.com/in/imed-touil-598149165/)
+- [ChibabEddine Zitouni](https://github.com/chihab4real)
+
 ## Screenshots
 
 
